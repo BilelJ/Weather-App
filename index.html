@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The free local weather app</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="A free local and international weather app">
+  <meta name="keywords" content="weather,Local weather, International weather,FreeCodeCamp">
+  <meta name="author" content="Bilel Jribi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="default">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  <!--Content starts here-->
+  <div class="wrapper">
+    <div id="locationField">
+      <input id="autocomplete" placeholder="Enter your address"
+      onFocus="geolocate()" type="text"
+      onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('button').click()">
+
+      <input type="button" id="button" value="Get the weather!"><br />
+      <div class="fader">
+      Latitude<div id="lat"></div>
+      Longitude<div id="lng"></div>
+      <div id="userLocation"></div>
+      <div id="weatherStatus"></div>
+      <div id="temperature" title="celcius" onclick="unitConvert()"></div>
+    </div>
+    </div>
+  <div>Developed by <a href="https://www.bileljribi.tn">Bilel Jribi</a></div>
+  </div>
+  <!--   Content ends here    -->
+
+  <script type="text/javascript" src="custom.js"></script>
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVJ00UhKBD0sXyypNuDfCZpq9SHMAzm0k&libraries=places&callback=initAutocomplete"
+    async defer>
+    </script>
+
+</body>
+</html>

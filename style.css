@@ -1,0 +1,81 @@
+a,a:hover,a:active{
+	color: green;
+}
+html{
+	height: 100%;
+	color: black;
+	font-size: 1.5em;
+	font-family: "Century Gothic";
+	width: 100%;
+	margin: 0;
+}
+.clear {
+	background-image: url(backgrounds/clear.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.rain {
+	background-image: url(backgrounds/rain.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.snow {
+	background-image: url(backgrounds/snow.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.drizzle {
+	background-image: url(backgrounds/drizzle.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.thunder {
+	background-image: url(backgrounds/thunder.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.fog {
+	background-image: url(backgrounds/fog.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.cloud {
+	background-image: url(backgrounds/cloud.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.default{
+background-color: lightgrey;
+
+}
+.wrapper{
+	text-align: center;
+	width: 85%;
+	margin: auto;
+	margin-top: 100px;
+}
+body{
+width: 100%;
+margin: 0;
+background: none;
+}
+#autocomplete{
+width: 50%;
+}
+.fader{
+	background-color: rgba(255,255,255, 0.6);
+	border-radius: 5px;
+
+}
+#button{
+	background-color: lightblue;
+	color: black;
+	border-radius: 5px;
+	border: none;
+	height: 24px;
+}
+@media (min-width: 720px) {
+	.wrapper {
+		width: 40%;
+	}
+}
